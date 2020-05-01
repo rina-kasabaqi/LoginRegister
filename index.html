@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body
+    style="background: linear-gradient(90deg, rgba(52,235,118,1) 73%, rgba(52,235,118,1) 78%, rgba(52,235,118,1) 84%, rgba(52,235,118,1) 92%)">
+    <header>
+        <img src="Ubtlogo.png" alt="Logo e UBT">
+        <ul id="lista">
+            <li><a>Home</a></li>
+            <li><a>About Us</a></li>
+            <li><a>Contact</a></li>
+        </ul>
+    </header>
+    <center>
+        <div id="main">
+            <div class="loginOrRegister">
+                <button id="loginB" onclick="myFunction1()">
+                    <h3>Login</h3>
+                </button>
+                <button id="registerB" onclick="myFunction2()">
+                    <h3>Register</h3>
+                </button></div>
+            <div id="loginDiv"> 
+                </button> <br> <br>
+                <label for="">Username: </label> <br>
+                <input type="text" placeholder="username"> <br> <br>
+                <label for="">Password: </label> <br> 
+                <input type="password" placeholder="password"> <br> <br>
+                <button>Login</button>
+            </div>
+            <div id="registerDiv" style="display: none;">
+                <label for="">Name: </label> <br>
+                <input type="text" placeholder="Name:"> <br><br>
+                <label for="">Surname: </label> <br>
+                <input type="text" placeholder="Surname: "> <br><br>
+                <label for="">Email: </label> <br>
+                <input type="email" placeholder="Email:"> <br> <br>
+                <label for="">Password: </label><br>
+                <input type="password" placeholder="Password"> <br><br>
+                <button>Register</button>
+            </div>
+        </div>
+    </center>
+    <footer>
+        <p style="text-align: center;">&copy; <br> <b>UBT - Prill 2020</b><p>
+    </footer>
+
+    <script>
+        function myFunction1() {
+            document.getElementById("registerDiv").style.display = "none";
+            document.getElementById("loginDiv").style.display = "block";
+        }
+        function myFunction2() {
+            document.getElementById("registerDiv").style.display = "block";
+            document.getElementById("loginDiv").style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
